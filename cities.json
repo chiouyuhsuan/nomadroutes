@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "updated": "2026-07",
+    "fx_usd_per_local_note": "Costs stored in USD/month. Sources: Numbeo (cost), Ookla (internet), climate normals.",
+    "methodology": "/methodology/"
+  },
+  "cities": [
+    {
+      "slug": "chiang-mai", "name": "Chiang Mai", "country": "Thailand", "flag": "🇹🇭",
+      "region": "Southeast Asia", "internet_mbps": 110, "climate": "Tropical, dry season Nov–Feb",
+      "cost": { "rent_1br": 380, "food": 300, "coworking": 100, "transport": 60, "misc": 160 },
+      "scores": { "affordability": 95, "connectivity": 78, "weather": 82, "community": 92 },
+      "sources": ["numbeo.com/cost-of-living/in/Chiang-Mai", "speedtest.net/global-index/thailand"]
+    },
+    {
+      "slug": "lisbon", "name": "Lisbon", "country": "Portugal", "flag": "🇵🇹",
+      "region": "Western Europe", "internet_mbps": 120, "climate": "Mediterranean, mild wet winters",
+      "cost": { "rent_1br": 1200, "food": 400, "coworking": 150, "transport": 45, "misc": 205 },
+      "scores": { "affordability": 52, "connectivity": 84, "weather": 80, "community": 90 },
+      "sources": ["numbeo.com/cost-of-living/in/Lisbon", "speedtest.net/global-index/portugal"]
+    },
+    {
+      "slug": "medellin", "name": "Medellín", "country": "Colombia", "flag": "🇨🇴",
+      "region": "Latin America", "internet_mbps": 95, "climate": "Eternal spring, ~22°C year-round",
+      "cost": { "rent_1br": 550, "food": 280, "coworking": 110, "transport": 50, "misc": 210 },
+      "scores": { "affordability": 84, "connectivity": 74, "weather": 95, "community": 85 },
+      "sources": ["numbeo.com/cost-of-living/in/Medellin", "speedtest.net/global-index/colombia"]
+    },
+    {
+      "slug": "valencia", "name": "Valencia", "country": "Spain", "flag": "🇪🇸",
+      "region": "Western Europe", "internet_mbps": 160, "climate": "Mediterranean, warm & sunny",
+      "cost": { "rent_1br": 950, "food": 380, "coworking": 130, "transport": 40, "misc": 200 },
+      "scores": { "affordability": 60, "connectivity": 90, "weather": 88, "community": 80 },
+      "sources": ["numbeo.com/cost-of-living/in/Valencia", "speedtest.net/global-index/spain"]
+    },
+    {
+      "slug": "bangkok", "name": "Bangkok", "country": "Thailand", "flag": "🇹🇭",
+      "region": "Southeast Asia", "internet_mbps": 130, "climate": "Tropical, hot & humid",
+      "cost": { "rent_1br": 650, "food": 320, "coworking": 120, "transport": 55, "misc": 205 },
+      "scores": { "affordability": 78, "connectivity": 86, "weather": 70, "community": 88 },
+      "sources": ["numbeo.com/cost-of-living/in/Bangkok", "speedtest.net/global-index/thailand"]
+    }
+  ]
+}
