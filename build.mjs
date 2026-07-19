@@ -18,7 +18,7 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
 <header class="site"><div class="wrap"><a class="logo" href="/">◆ NomadRoutes</a></div></header>
 <main class="wrap">${body}</main>
 <footer class="wrap foot"><p>Data-driven, auto-updated monthly · <a href="/methodology/">Methodology</a> · © NomadRoutes</p></footer>
-</body></html>`;
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "660c42dbf22c4a1192f9a109b086a5be"}'></script><!-- End Cloudflare Web Analytics --></body></html>`;
 
 const bar=(k,v)=>`<div class="bar"><span class="bl">${k}</span><span class="track"><span class="fill" style="width:${v}%"></span></span><span class="bv">${v}</span></div>`;
 
