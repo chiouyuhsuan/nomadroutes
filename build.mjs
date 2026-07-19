@@ -11,7 +11,6 @@ const out = (p, html) => { mkdirSync(dirname(p), {recursive:true}); writeFileSyn
 const CSSINLINE = readFileSync('./styles.css','utf8');
 const shell = (title, desc, body, jsonld) => `<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="google-site-verification" content="UjQ8iTBj5Saa2-kde7hZRfLu-PbaT5JUQNJNkkcrMOY">
 <title>${title}</title><meta name="description" content="${desc}">
 <style>${CSSINLINE}</style>
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>`:''}
@@ -81,6 +80,7 @@ out('dist/methodology/index.html', shell('Methodology — NomadRoutes','How our 
 // static assets + sitemap
 copyFileSync('./styles.css','dist/styles.css');
 copyFileSync('./robots.txt','dist/robots.txt');
+copyFileSync('./google4366e78331d5dae5.html','dist/google4366e78331d5dae5.html');
 const urls=['/','/methodology/',...data.cities.map(c=>`/city/${c.slug}/cost-of-living/`)];
 out('dist/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u=>`<url><loc>https://nomadroutes.pages.dev${u}</loc></url>`).join('\n')}\n</urlset>`);
 
