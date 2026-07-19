@@ -1,44 +1,1231 @@
 {
   "_meta": {
     "updated": "2026-07",
-    "fx_usd_per_local_note": "Costs stored in USD/month. Sources: Numbeo (cost), Ookla (internet), climate normals.",
+    "fx_usd_per_local_note": "Costs stored in USD/month. Sources: Numbeo (cost), Ookla (internet), climate normals. Seed estimates — verify before publishing.",
     "methodology": "/methodology/"
   },
   "cities": [
     {
-      "slug": "chiang-mai", "name": "Chiang Mai", "country": "Thailand", "flag": "🇹🇭",
-      "region": "Southeast Asia", "internet_mbps": 110, "climate": "Tropical, dry season Nov–Feb",
-      "cost": { "rent_1br": 380, "food": 300, "coworking": 100, "transport": 60, "misc": 160 },
-      "scores": { "affordability": 95, "connectivity": 78, "weather": 82, "community": 92 },
-      "sources": ["numbeo.com/cost-of-living/in/Chiang-Mai", "speedtest.net/global-index/thailand"]
+      "slug": "chiang-mai",
+      "name": "Chiang Mai",
+      "country": "Thailand",
+      "flag": "🇹🇭",
+      "region": "Southeast Asia",
+      "internet_mbps": 110,
+      "climate": "Tropical, dry season Nov–Feb",
+      "cost": {
+        "rent_1br": 380,
+        "food": 300,
+        "coworking": 100,
+        "transport": 60,
+        "misc": 160
+      },
+      "scores": {
+        "affordability": 92,
+        "connectivity": 78,
+        "weather": 82,
+        "community": 92
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Chiang-Mai",
+        "speedtest.net/global-index"
+      ]
     },
     {
-      "slug": "lisbon", "name": "Lisbon", "country": "Portugal", "flag": "🇵🇹",
-      "region": "Western Europe", "internet_mbps": 120, "climate": "Mediterranean, mild wet winters",
-      "cost": { "rent_1br": 1200, "food": 400, "coworking": 150, "transport": 45, "misc": 205 },
-      "scores": { "affordability": 52, "connectivity": 84, "weather": 80, "community": 90 },
-      "sources": ["numbeo.com/cost-of-living/in/Lisbon", "speedtest.net/global-index/portugal"]
+      "slug": "bangkok",
+      "name": "Bangkok",
+      "country": "Thailand",
+      "flag": "🇹🇭",
+      "region": "Southeast Asia",
+      "internet_mbps": 130,
+      "climate": "Tropical, hot & humid",
+      "cost": {
+        "rent_1br": 650,
+        "food": 320,
+        "coworking": 120,
+        "transport": 55,
+        "misc": 205
+      },
+      "scores": {
+        "affordability": 84,
+        "connectivity": 86,
+        "weather": 70,
+        "community": 88
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Bangkok",
+        "speedtest.net/global-index"
+      ]
     },
     {
-      "slug": "medellin", "name": "Medellín", "country": "Colombia", "flag": "🇨🇴",
-      "region": "Latin America", "internet_mbps": 95, "climate": "Eternal spring, ~22°C year-round",
-      "cost": { "rent_1br": 550, "food": 280, "coworking": 110, "transport": 50, "misc": 210 },
-      "scores": { "affordability": 84, "connectivity": 74, "weather": 95, "community": 85 },
-      "sources": ["numbeo.com/cost-of-living/in/Medellin", "speedtest.net/global-index/colombia"]
+      "slug": "bali",
+      "name": "Bali (Canggu)",
+      "country": "Indonesia",
+      "flag": "🇮🇩",
+      "region": "Southeast Asia",
+      "internet_mbps": 60,
+      "climate": "Tropical, wet Nov–Mar",
+      "cost": {
+        "rent_1br": 700,
+        "food": 320,
+        "coworking": 120,
+        "transport": 70,
+        "misc": 190
+      },
+      "scores": {
+        "affordability": 82,
+        "connectivity": 61,
+        "weather": 86,
+        "community": 95
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Bali",
+        "speedtest.net/global-index"
+      ]
     },
     {
-      "slug": "valencia", "name": "Valencia", "country": "Spain", "flag": "🇪🇸",
-      "region": "Western Europe", "internet_mbps": 160, "climate": "Mediterranean, warm & sunny",
-      "cost": { "rent_1br": 950, "food": 380, "coworking": 130, "transport": 40, "misc": 200 },
-      "scores": { "affordability": 60, "connectivity": 90, "weather": 88, "community": 80 },
-      "sources": ["numbeo.com/cost-of-living/in/Valencia", "speedtest.net/global-index/spain"]
+      "slug": "ho-chi-minh-city",
+      "name": "Ho Chi Minh City",
+      "country": "Vietnam",
+      "flag": "🇻🇳",
+      "region": "Southeast Asia",
+      "internet_mbps": 95,
+      "climate": "Tropical, dry Dec–Apr",
+      "cost": {
+        "rent_1br": 550,
+        "food": 260,
+        "coworking": 90,
+        "transport": 45,
+        "misc": 180
+      },
+      "scores": {
+        "affordability": 89,
+        "connectivity": 73,
+        "weather": 78,
+        "community": 84
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Ho-Chi-Minh-City",
+        "speedtest.net/global-index"
+      ]
     },
     {
-      "slug": "bangkok", "name": "Bangkok", "country": "Thailand", "flag": "🇹🇭",
-      "region": "Southeast Asia", "internet_mbps": 130, "climate": "Tropical, hot & humid",
-      "cost": { "rent_1br": 650, "food": 320, "coworking": 120, "transport": 55, "misc": 205 },
-      "scores": { "affordability": 78, "connectivity": 86, "weather": 70, "community": 88 },
-      "sources": ["numbeo.com/cost-of-living/in/Bangkok", "speedtest.net/global-index/thailand"]
+      "slug": "hanoi",
+      "name": "Hanoi",
+      "country": "Vietnam",
+      "flag": "🇻🇳",
+      "region": "Southeast Asia",
+      "internet_mbps": 90,
+      "climate": "Humid subtropical, cool winters",
+      "cost": {
+        "rent_1br": 450,
+        "food": 240,
+        "coworking": 85,
+        "transport": 40,
+        "misc": 175
+      },
+      "scores": {
+        "affordability": 93,
+        "connectivity": 72,
+        "weather": 72,
+        "community": 80
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Hanoi",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "da-nang",
+      "name": "Da Nang",
+      "country": "Vietnam",
+      "flag": "🇻🇳",
+      "region": "Southeast Asia",
+      "internet_mbps": 95,
+      "climate": "Tropical, dry Feb–Aug",
+      "cost": {
+        "rent_1br": 400,
+        "food": 230,
+        "coworking": 80,
+        "transport": 40,
+        "misc": 160
+      },
+      "scores": {
+        "affordability": 95,
+        "connectivity": 73,
+        "weather": 84,
+        "community": 82
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Da-Nang",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "kuala-lumpur",
+      "name": "Kuala Lumpur",
+      "country": "Malaysia",
+      "flag": "🇲🇾",
+      "region": "Southeast Asia",
+      "internet_mbps": 120,
+      "climate": "Tropical, rain year-round",
+      "cost": {
+        "rent_1br": 600,
+        "food": 300,
+        "coworking": 110,
+        "transport": 50,
+        "misc": 190
+      },
+      "scores": {
+        "affordability": 86,
+        "connectivity": 82,
+        "weather": 74,
+        "community": 82
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Kuala-Lumpur",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "penang",
+      "name": "Penang",
+      "country": "Malaysia",
+      "flag": "🇲🇾",
+      "region": "Southeast Asia",
+      "internet_mbps": 110,
+      "climate": "Tropical, warm & humid",
+      "cost": {
+        "rent_1br": 480,
+        "food": 270,
+        "coworking": 95,
+        "transport": 40,
+        "misc": 165
+      },
+      "scores": {
+        "affordability": 91,
+        "connectivity": 78,
+        "weather": 80,
+        "community": 78
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Penang",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "manila",
+      "name": "Manila",
+      "country": "Philippines",
+      "flag": "🇵🇭",
+      "region": "Southeast Asia",
+      "internet_mbps": 90,
+      "climate": "Tropical, wet Jun–Nov",
+      "cost": {
+        "rent_1br": 600,
+        "food": 300,
+        "coworking": 110,
+        "transport": 60,
+        "misc": 200
+      },
+      "scores": {
+        "affordability": 86,
+        "connectivity": 72,
+        "weather": 66,
+        "community": 74
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Manila",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "cebu",
+      "name": "Cebu",
+      "country": "Philippines",
+      "flag": "🇵🇭",
+      "region": "Southeast Asia",
+      "internet_mbps": 85,
+      "climate": "Tropical, drier than Manila",
+      "cost": {
+        "rent_1br": 480,
+        "food": 260,
+        "coworking": 95,
+        "transport": 45,
+        "misc": 170
+      },
+      "scores": {
+        "affordability": 91,
+        "connectivity": 70,
+        "weather": 76,
+        "community": 74
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Cebu",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "lisbon",
+      "name": "Lisbon",
+      "country": "Portugal",
+      "flag": "🇵🇹",
+      "region": "Western Europe",
+      "internet_mbps": 120,
+      "climate": "Mediterranean, mild wet winters",
+      "cost": {
+        "rent_1br": 1200,
+        "food": 400,
+        "coworking": 150,
+        "transport": 45,
+        "misc": 205
+      },
+      "scores": {
+        "affordability": 68,
+        "connectivity": 82,
+        "weather": 80,
+        "community": 90
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Lisbon",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "porto",
+      "name": "Porto",
+      "country": "Portugal",
+      "flag": "🇵🇹",
+      "region": "Western Europe",
+      "internet_mbps": 115,
+      "climate": "Mild Atlantic, wetter winters",
+      "cost": {
+        "rent_1br": 950,
+        "food": 360,
+        "coworking": 130,
+        "transport": 40,
+        "misc": 190
+      },
+      "scores": {
+        "affordability": 76,
+        "connectivity": 80,
+        "weather": 76,
+        "community": 84
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Porto",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "valencia",
+      "name": "Valencia",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "region": "Western Europe",
+      "internet_mbps": 160,
+      "climate": "Mediterranean, warm & sunny",
+      "cost": {
+        "rent_1br": 950,
+        "food": 380,
+        "coworking": 130,
+        "transport": 40,
+        "misc": 200
+      },
+      "scores": {
+        "affordability": 75,
+        "connectivity": 96,
+        "weather": 88,
+        "community": 80
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Valencia",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "barcelona",
+      "name": "Barcelona",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "region": "Western Europe",
+      "internet_mbps": 170,
+      "climate": "Mediterranean, mild",
+      "cost": {
+        "rent_1br": 1400,
+        "food": 450,
+        "coworking": 160,
+        "transport": 50,
+        "misc": 240
+      },
+      "scores": {
+        "affordability": 60,
+        "connectivity": 98,
+        "weather": 84,
+        "community": 88
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Barcelona",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "madrid",
+      "name": "Madrid",
+      "country": "Spain",
+      "flag": "🇪🇸",
+      "region": "Western Europe",
+      "internet_mbps": 180,
+      "climate": "Continental, hot summers",
+      "cost": {
+        "rent_1br": 1300,
+        "food": 430,
+        "coworking": 150,
+        "transport": 45,
+        "misc": 225
+      },
+      "scores": {
+        "affordability": 64,
+        "connectivity": 98,
+        "weather": 78,
+        "community": 84
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Madrid",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "berlin",
+      "name": "Berlin",
+      "country": "Germany",
+      "flag": "🇩🇪",
+      "region": "Western Europe",
+      "internet_mbps": 150,
+      "climate": "Continental, cold winters",
+      "cost": {
+        "rent_1br": 1300,
+        "food": 420,
+        "coworking": 180,
+        "transport": 60,
+        "misc": 240
+      },
+      "scores": {
+        "affordability": 62,
+        "connectivity": 92,
+        "weather": 62,
+        "community": 86
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Berlin",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "budapest",
+      "name": "Budapest",
+      "country": "Hungary",
+      "flag": "🇭🇺",
+      "region": "Central Europe",
+      "internet_mbps": 175,
+      "climate": "Continental, cold winters",
+      "cost": {
+        "rent_1br": 700,
+        "food": 320,
+        "coworking": 120,
+        "transport": 40,
+        "misc": 180
+      },
+      "scores": {
+        "affordability": 84,
+        "connectivity": 98,
+        "weather": 68,
+        "community": 82
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Budapest",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "prague",
+      "name": "Prague",
+      "country": "Czechia",
+      "flag": "🇨🇿",
+      "region": "Central Europe",
+      "internet_mbps": 170,
+      "climate": "Continental, cold winters",
+      "cost": {
+        "rent_1br": 900,
+        "food": 360,
+        "coworking": 140,
+        "transport": 35,
+        "misc": 205
+      },
+      "scores": {
+        "affordability": 76,
+        "connectivity": 98,
+        "weather": 66,
+        "community": 82
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Prague",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "krakow",
+      "name": "Kraków",
+      "country": "Poland",
+      "flag": "🇵🇱",
+      "region": "Central Europe",
+      "internet_mbps": 165,
+      "climate": "Continental, cold winters",
+      "cost": {
+        "rent_1br": 700,
+        "food": 300,
+        "coworking": 110,
+        "transport": 35,
+        "misc": 175
+      },
+      "scores": {
+        "affordability": 84,
+        "connectivity": 98,
+        "weather": 64,
+        "community": 78
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Kraków",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "warsaw",
+      "name": "Warsaw",
+      "country": "Poland",
+      "flag": "🇵🇱",
+      "region": "Central Europe",
+      "internet_mbps": 175,
+      "climate": "Continental, cold winters",
+      "cost": {
+        "rent_1br": 800,
+        "food": 320,
+        "coworking": 120,
+        "transport": 35,
+        "misc": 185
+      },
+      "scores": {
+        "affordability": 81,
+        "connectivity": 98,
+        "weather": 62,
+        "community": 76
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Warsaw",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "sofia",
+      "name": "Sofia",
+      "country": "Bulgaria",
+      "flag": "🇧🇬",
+      "region": "Eastern Europe",
+      "internet_mbps": 180,
+      "climate": "Continental, snowy winters",
+      "cost": {
+        "rent_1br": 550,
+        "food": 280,
+        "coworking": 100,
+        "transport": 30,
+        "misc": 160
+      },
+      "scores": {
+        "affordability": 90,
+        "connectivity": 98,
+        "weather": 66,
+        "community": 74
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Sofia",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "bucharest",
+      "name": "Bucharest",
+      "country": "Romania",
+      "flag": "🇷🇴",
+      "region": "Eastern Europe",
+      "internet_mbps": 200,
+      "climate": "Continental, hot summers",
+      "cost": {
+        "rent_1br": 600,
+        "food": 290,
+        "coworking": 100,
+        "transport": 30,
+        "misc": 170
+      },
+      "scores": {
+        "affordability": 88,
+        "connectivity": 98,
+        "weather": 66,
+        "community": 74
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Bucharest",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "belgrade",
+      "name": "Belgrade",
+      "country": "Serbia",
+      "flag": "🇷🇸",
+      "region": "Eastern Europe",
+      "internet_mbps": 110,
+      "climate": "Continental, cold winters",
+      "cost": {
+        "rent_1br": 600,
+        "food": 280,
+        "coworking": 100,
+        "transport": 30,
+        "misc": 170
+      },
+      "scores": {
+        "affordability": 88,
+        "connectivity": 78,
+        "weather": 64,
+        "community": 78
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Belgrade",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "tbilisi",
+      "name": "Tbilisi",
+      "country": "Georgia",
+      "flag": "🇬🇪",
+      "region": "Eastern Europe",
+      "internet_mbps": 60,
+      "climate": "Mild, visa-friendly",
+      "cost": {
+        "rent_1br": 500,
+        "food": 260,
+        "coworking": 90,
+        "transport": 25,
+        "misc": 155
+      },
+      "scores": {
+        "affordability": 92,
+        "connectivity": 61,
+        "weather": 72,
+        "community": 80
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Tbilisi",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "tallinn",
+      "name": "Tallinn",
+      "country": "Estonia",
+      "flag": "🇪🇪",
+      "region": "Northern Europe",
+      "internet_mbps": 175,
+      "climate": "Cold, long winters",
+      "cost": {
+        "rent_1br": 900,
+        "food": 340,
+        "coworking": 130,
+        "transport": 35,
+        "misc": 195
+      },
+      "scores": {
+        "affordability": 78,
+        "connectivity": 98,
+        "weather": 58,
+        "community": 74
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Tallinn",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "istanbul",
+      "name": "Istanbul",
+      "country": "Turkey",
+      "flag": "🇹🇷",
+      "region": "Eurasia",
+      "internet_mbps": 75,
+      "climate": "Mediterranean, mild",
+      "cost": {
+        "rent_1br": 600,
+        "food": 280,
+        "coworking": 100,
+        "transport": 35,
+        "misc": 175
+      },
+      "scores": {
+        "affordability": 88,
+        "connectivity": 66,
+        "weather": 74,
+        "community": 80
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Istanbul",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "athens",
+      "name": "Athens",
+      "country": "Greece",
+      "flag": "🇬🇷",
+      "region": "Southern Europe",
+      "internet_mbps": 85,
+      "climate": "Mediterranean, hot summers",
+      "cost": {
+        "rent_1br": 750,
+        "food": 330,
+        "coworking": 120,
+        "transport": 40,
+        "misc": 190
+      },
+      "scores": {
+        "affordability": 82,
+        "connectivity": 70,
+        "weather": 86,
+        "community": 78
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Athens",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "split",
+      "name": "Split",
+      "country": "Croatia",
+      "flag": "🇭🇷",
+      "region": "Southern Europe",
+      "internet_mbps": 90,
+      "climate": "Mediterranean, sunny",
+      "cost": {
+        "rent_1br": 800,
+        "food": 340,
+        "coworking": 120,
+        "transport": 35,
+        "misc": 195
+      },
+      "scores": {
+        "affordability": 80,
+        "connectivity": 72,
+        "weather": 88,
+        "community": 76
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Split",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "tirana",
+      "name": "Tirana",
+      "country": "Albania",
+      "flag": "🇦🇱",
+      "region": "Southern Europe",
+      "internet_mbps": 70,
+      "climate": "Mediterranean, mild",
+      "cost": {
+        "rent_1br": 450,
+        "food": 250,
+        "coworking": 90,
+        "transport": 25,
+        "misc": 150
+      },
+      "scores": {
+        "affordability": 93,
+        "connectivity": 64,
+        "weather": 80,
+        "community": 70
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Tirana",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "kotor",
+      "name": "Kotor",
+      "country": "Montenegro",
+      "flag": "🇲🇪",
+      "region": "Southern Europe",
+      "internet_mbps": 65,
+      "climate": "Mediterranean, coastal",
+      "cost": {
+        "rent_1br": 600,
+        "food": 280,
+        "coworking": 95,
+        "transport": 30,
+        "misc": 165
+      },
+      "scores": {
+        "affordability": 88,
+        "connectivity": 63,
+        "weather": 84,
+        "community": 68
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Kotor",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "mexico-city",
+      "name": "Mexico City",
+      "country": "Mexico",
+      "flag": "🇲🇽",
+      "region": "Latin America",
+      "internet_mbps": 80,
+      "climate": "Mild highland, spring-like",
+      "cost": {
+        "rent_1br": 750,
+        "food": 320,
+        "coworking": 130,
+        "transport": 45,
+        "misc": 205
+      },
+      "scores": {
+        "affordability": 81,
+        "connectivity": 68,
+        "weather": 80,
+        "community": 90
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Mexico-City",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "playa-del-carmen",
+      "name": "Playa del Carmen",
+      "country": "Mexico",
+      "flag": "🇲🇽",
+      "region": "Latin America",
+      "internet_mbps": 70,
+      "climate": "Tropical Caribbean",
+      "cost": {
+        "rent_1br": 900,
+        "food": 340,
+        "coworking": 130,
+        "transport": 40,
+        "misc": 210
+      },
+      "scores": {
+        "affordability": 77,
+        "connectivity": 64,
+        "weather": 88,
+        "community": 84
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Playa-del-Carmen",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "medellin",
+      "name": "Medellín",
+      "country": "Colombia",
+      "flag": "🇨🇴",
+      "region": "Latin America",
+      "internet_mbps": 95,
+      "climate": "Eternal spring, ~22°C",
+      "cost": {
+        "rent_1br": 550,
+        "food": 280,
+        "coworking": 110,
+        "transport": 50,
+        "misc": 210
+      },
+      "scores": {
+        "affordability": 88,
+        "connectivity": 73,
+        "weather": 95,
+        "community": 85
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Medellín",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "bogota",
+      "name": "Bogotá",
+      "country": "Colombia",
+      "flag": "🇨🇴",
+      "region": "Latin America",
+      "internet_mbps": 90,
+      "climate": "Cool highland",
+      "cost": {
+        "rent_1br": 500,
+        "food": 270,
+        "coworking": 100,
+        "transport": 45,
+        "misc": 185
+      },
+      "scores": {
+        "affordability": 90,
+        "connectivity": 72,
+        "weather": 70,
+        "community": 76
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Bogotá",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "buenos-aires",
+      "name": "Buenos Aires",
+      "country": "Argentina",
+      "flag": "🇦🇷",
+      "region": "Latin America",
+      "internet_mbps": 85,
+      "climate": "Temperate, four seasons",
+      "cost": {
+        "rent_1br": 600,
+        "food": 300,
+        "coworking": 110,
+        "transport": 35,
+        "misc": 205
+      },
+      "scores": {
+        "affordability": 86,
+        "connectivity": 70,
+        "weather": 78,
+        "community": 84
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Buenos-Aires",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "lima",
+      "name": "Lima",
+      "country": "Peru",
+      "flag": "🇵🇪",
+      "region": "Latin America",
+      "internet_mbps": 80,
+      "climate": "Mild desert, grey winters",
+      "cost": {
+        "rent_1br": 550,
+        "food": 270,
+        "coworking": 100,
+        "transport": 40,
+        "misc": 190
+      },
+      "scores": {
+        "affordability": 89,
+        "connectivity": 68,
+        "weather": 70,
+        "community": 74
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Lima",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "santiago",
+      "name": "Santiago",
+      "country": "Chile",
+      "flag": "🇨🇱",
+      "region": "Latin America",
+      "internet_mbps": 110,
+      "climate": "Mediterranean, four seasons",
+      "cost": {
+        "rent_1br": 700,
+        "food": 320,
+        "coworking": 120,
+        "transport": 45,
+        "misc": 215
+      },
+      "scores": {
+        "affordability": 82,
+        "connectivity": 78,
+        "weather": 76,
+        "community": 76
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Santiago",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "florianopolis",
+      "name": "Florianópolis",
+      "country": "Brazil",
+      "flag": "🇧🇷",
+      "region": "Latin America",
+      "internet_mbps": 90,
+      "climate": "Subtropical, warm summers",
+      "cost": {
+        "rent_1br": 650,
+        "food": 300,
+        "coworking": 110,
+        "transport": 40,
+        "misc": 200
+      },
+      "scores": {
+        "affordability": 85,
+        "connectivity": 72,
+        "weather": 86,
+        "community": 78
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Florianópolis",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "sao-paulo",
+      "name": "São Paulo",
+      "country": "Brazil",
+      "flag": "🇧🇷",
+      "region": "Latin America",
+      "internet_mbps": 95,
+      "climate": "Subtropical, rainy summers",
+      "cost": {
+        "rent_1br": 800,
+        "food": 330,
+        "coworking": 120,
+        "transport": 45,
+        "misc": 215
+      },
+      "scores": {
+        "affordability": 80,
+        "connectivity": 73,
+        "weather": 72,
+        "community": 80
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/São-Paulo",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "cape-town",
+      "name": "Cape Town",
+      "country": "South Africa",
+      "flag": "🇿🇦",
+      "region": "Africa",
+      "internet_mbps": 60,
+      "climate": "Mediterranean, dry summers",
+      "cost": {
+        "rent_1br": 700,
+        "food": 300,
+        "coworking": 120,
+        "transport": 55,
+        "misc": 205
+      },
+      "scores": {
+        "affordability": 83,
+        "connectivity": 61,
+        "weather": 88,
+        "community": 84
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Cape-Town",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "marrakech",
+      "name": "Marrakech",
+      "country": "Morocco",
+      "flag": "🇲🇦",
+      "region": "Africa",
+      "internet_mbps": 50,
+      "climate": "Hot desert, dry",
+      "cost": {
+        "rent_1br": 550,
+        "food": 250,
+        "coworking": 90,
+        "transport": 35,
+        "misc": 160
+      },
+      "scores": {
+        "affordability": 90,
+        "connectivity": 58,
+        "weather": 82,
+        "community": 70
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Marrakech",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "cairo",
+      "name": "Cairo",
+      "country": "Egypt",
+      "flag": "🇪🇬",
+      "region": "Africa",
+      "internet_mbps": 45,
+      "climate": "Hot desert, dry",
+      "cost": {
+        "rent_1br": 450,
+        "food": 230,
+        "coworking": 80,
+        "transport": 30,
+        "misc": 150
+      },
+      "scores": {
+        "affordability": 94,
+        "connectivity": 56,
+        "weather": 78,
+        "community": 68
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Cairo",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "dubai",
+      "name": "Dubai",
+      "country": "UAE",
+      "flag": "🇦🇪",
+      "region": "Middle East",
+      "internet_mbps": 240,
+      "climate": "Hot desert, extreme summers",
+      "cost": {
+        "rent_1br": 1800,
+        "food": 500,
+        "coworking": 200,
+        "transport": 60,
+        "misc": 300
+      },
+      "scores": {
+        "affordability": 46,
+        "connectivity": 98,
+        "weather": 74,
+        "community": 80
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Dubai",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "tokyo",
+      "name": "Tokyo",
+      "country": "Japan",
+      "flag": "🇯🇵",
+      "region": "East Asia",
+      "internet_mbps": 210,
+      "climate": "Humid subtropical, four seasons",
+      "cost": {
+        "rent_1br": 1500,
+        "food": 480,
+        "coworking": 180,
+        "transport": 55,
+        "misc": 285
+      },
+      "scores": {
+        "affordability": 55,
+        "connectivity": 98,
+        "weather": 72,
+        "community": 84
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Tokyo",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "taipei",
+      "name": "Taipei",
+      "country": "Taiwan",
+      "flag": "🇹🇼",
+      "region": "East Asia",
+      "internet_mbps": 150,
+      "climate": "Humid subtropical, warm",
+      "cost": {
+        "rent_1br": 900,
+        "food": 340,
+        "coworking": 130,
+        "transport": 35,
+        "misc": 205
+      },
+      "scores": {
+        "affordability": 77,
+        "connectivity": 92,
+        "weather": 78,
+        "community": 82
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Taipei",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "seoul",
+      "name": "Seoul",
+      "country": "South Korea",
+      "flag": "🇰🇷",
+      "region": "East Asia",
+      "internet_mbps": 220,
+      "climate": "Continental, cold winters",
+      "cost": {
+        "rent_1br": 1100,
+        "food": 400,
+        "coworking": 150,
+        "transport": 40,
+        "misc": 235
+      },
+      "scores": {
+        "affordability": 69,
+        "connectivity": 98,
+        "weather": 68,
+        "community": 80
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Seoul",
+        "speedtest.net/global-index"
+      ]
+    },
+    {
+      "slug": "goa",
+      "name": "Goa",
+      "country": "India",
+      "flag": "🇮🇳",
+      "region": "South Asia",
+      "internet_mbps": 60,
+      "climate": "Tropical, dry Nov–Mar",
+      "cost": {
+        "rent_1br": 450,
+        "food": 220,
+        "coworking": 80,
+        "transport": 35,
+        "misc": 155
+      },
+      "scores": {
+        "affordability": 94,
+        "connectivity": 61,
+        "weather": 84,
+        "community": 80
+      },
+      "sources": [
+        "numbeo.com/cost-of-living/in/Goa",
+        "speedtest.net/global-index"
+      ]
     }
   ]
 }
