@@ -11,6 +11,7 @@ const out = (p, html) => { mkdirSync(dirname(p), {recursive:true}); writeFileSyn
 const CSSINLINE = readFileSync('./styles.css','utf8');
 const shell = (title, desc, body, jsonld) => `<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="google-site-verification" content="UjQ8iTBj5Saa2-kde7hZRfLu-PbaT5JUQNJNkkcrMOY">
 <title>${title}</title><meta name="description" content="${desc}">
 <style>${CSSINLINE}</style>
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>`:''}
