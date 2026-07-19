@@ -9,12 +9,14 @@ const score = c => Math.round(Object.entries(W).reduce((s,[k,v])=>s+c.scores[k]*
 const out = (p, html) => { mkdirSync(dirname(p), {recursive:true}); writeFileSync(p, html); };
 
 const CSSINLINE = readFileSync('./styles.css','utf8');
-const shell = (title, desc, body, jsonld) => `<!doctype html><html lang="en"><head>
+const GTM_HEAD = `<!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NJ5Z7GX2');</script><!-- End Google Tag Manager -->`;
+const GTM_BODY = `<!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ5Z7GX2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->`;
+const shell = (title, desc, body, jsonld) => `<!doctype html><html lang="en"><head>${GTM_HEAD}
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${title}</title><meta name="description" content="${desc}">
 <style>${CSSINLINE}</style>
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>`:''}
-</head><body>
+</head><body>${GTM_BODY}
 <header class="site"><div class="wrap"><a class="logo" href="/">◆ NomadRoutes</a></div></header>
 <main class="wrap">${body}</main>
 <footer class="wrap foot"><p>Data-driven, auto-updated monthly · <a href="/methodology/">Methodology</a> · © NomadRoutes</p></footer>
